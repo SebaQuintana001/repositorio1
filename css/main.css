@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /*paleta de colores*/
 /* Tamaños*/
+.grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%; }
+
 .contenedor {
   max-width: 95%;
   display: flex;
@@ -147,13 +151,14 @@ h2 {
 
 .tarjeta {
   height: 320px; }
-  .tarjeta__contenido img {
-    width: 258px;
-    height: 172px;
-    border-radius: 50%;
-    border-color: #F26419;
-    object-fit: cover;
-    border: 10px; }
+  .tarjeta__contenido {
+    margin: 20px 20px; }
+    .tarjeta__contenido :hover {
+      box-shadow: 2px 2px 20px 0 black; }
+    .tarjeta__contenido img {
+      width: 225px;
+      height: 150px;
+      border-radius: 50%; }
 
 header {
   background-color: #37393A;
@@ -229,6 +234,77 @@ header {
         display: absolute; }
       header .nav__menu__item {
         line-height: 70px; } }
+
+.contenedor {
+  max-width: 95%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 100px auto;
+  border-radius: 15px;
+  flex-flow: row; }
+
+.casilla:hover {
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.39); }
+
+.casilla {
+  min-height: 220px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 15px;
+  margin: 30px 10px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px; }
+  .casilla h2 {
+    padding: 10px 10px; }
+  .casilla__row {
+    display: flex;
+    flex-direction: row;
+    width: 50%; }
+  .casilla__column {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .casilla__titulo {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-bottom: 20px;
+    left: auto; }
+  .casilla__contenido {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .casilla__contenido p {
+      text-align: center; }
+  .casilla img {
+    color: #37393A;
+    width: 80px;
+    height: 80px; }
+    .casilla img :hover {
+      background-color: #B2ABF2; }
+
+@media only screen and (min-width: 768px) and (max-width: 1074px) {
+  h2 {
+    font-size: 1.2em; }
+  .casilla__titulo {
+    position: relative; }
+  .casilla__contenido img {
+    width: 61.53846px;
+    height: 61.53846px; } }
+
+@media only screen and (max-width: 768px) {
+  .contenedor {
+    max-width: 80%;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center; }
+  .casilla__titulo {
+    position: relative; } }
 
 footer {
   display: flex;

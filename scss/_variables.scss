@@ -7,7 +7,10 @@ $negro:#37393A;
 $width-img:80px;
 $height-img:80px;
 $width-porcent:100%;
-
+.grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
 
 .contenedor{
     max-width: 95%;

@@ -1,13 +1,15 @@
 .tarjeta{
     height:320px;
+    
     &__contenido{
+        margin: 20px 20px;
+        :hover{
+            box-shadow: 2px 2px 20px 0 rgb(0, 0, 0);
+        }
         img{
-            width:258px;
-            height:172px;
+            width:225px;
+            height:150px;
             border-radius: 50%;
-            border-color:$naranjo;
-            object-fit: cover;
-            border:10px;
         }
     }
 }
