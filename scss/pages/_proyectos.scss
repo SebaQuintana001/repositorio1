@@ -1,0 +1,13 @@
+.tarjeta{
+    height:320px;
+    &__contenido{
+        img{
+            width:258px;
+            height:172px;
+            border-radius: 50%;
+            border-color:$naranjo;
+            object-fit: cover;
+            border:10px;
+        }
+    }
+}

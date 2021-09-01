@@ -1,0 +1,19 @@
+.contenedor__contacto{
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+    margin: 100px auto;
+    border-radius: 15px;
+    flex-flow: column;
+    &__row{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    &__column{
+        display: flex;
+        flex-direction: column;
+        width:100%
+    }
+}

@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #747474;
+}
+a{
+    text-decoration: none;
+    color:$azul;
+}
+ul,ol{
+    text-decoration: none;
+    li{
+        text-decoration: none;
+    }
+}
+p{
+    color:$azul;
+    font-size: 1.2em;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+}
+@media only screen and (max-width:768px){
+    h2{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1em;
+    }
+
+}

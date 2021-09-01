@@ -1,0 +1,91 @@
+header{
+    background-color: $negro;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 40;
+        line-height: 80px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        max-width: 992px;
+        margin:0 auto;
+        &__toggle{
+            color: $azul;
+            background-color: none;
+            border: none;
+            font-size: 30px;
+            padding: 0 20px;
+            line-height: 60px;
+            cursor: pointer;
+            display: none;
+        }
+        &__link{
+            color:$azul;
+            text-decoration: none;
+        }
+        &__menu{
+            display: flex;
+            margin-right: 40px;
+            list-style: none;
+            &__item{
+                font-size: 18px;
+                margin: 0 10px;
+                line-height: 80px;
+                text-transform:uppercase;
+                width: max-content;
+            }
+            &__link{
+                padding: 8px 12px;
+                border-radius: 3px;
+            }
+        }
+    }
+    }
+@media only screen and (max-width:768px) {
+    header{
+        height: 60px;
+        .logo{
+            font-size: 25px;
+            padding: 0 20px;
+            line-height: 60px;
+        }
+        .nav{
+            &__toggle{
+                background-color: $negro;
+                display: block;
+                :focus:not(:focus-visible){
+                    outline: none;
+                }
+            }
+            &__menu{
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #2c3e50;
+            position: fixed;
+            top: 60px;
+            width: 100%;
+            padding: 20px 0;
+            width:$width-porcent -60px;
+            overflow: auto;
+            left: 100%;
+            transition: left 0.3s;
+            &__visible{
+                left: 0;
+                display: absolute;
+            }
+            &__item{
+                line-height: 70px;
+            }  
+            }
+        }
+    }
+}

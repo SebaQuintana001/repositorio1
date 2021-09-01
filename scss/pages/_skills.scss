@@ -1,0 +1,20 @@
+.skills{
+    min-height: 220px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 15px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: row wrap;
+    &__contenido{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+}

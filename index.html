@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="desarrollo,web,diseño,host,hosting">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,700&display=swap');
+    </style>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Freelance</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+          <a href="#" class="logo nav__link">Portfolio.</a>
+          <button class="nav__toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav__menu">
+            <li class="nav__menu__item">
+              <a href="#" class="nav__menu__link nav__link">Inicio</a>
+            </li>
+            <li class="nav__menu__item">
+              <a href="#about-me" class="nav__menu__link nav__link">Sobre mi</a>
+            </li>
+            <li class="nav__menu__item">
+              <a href="#skills" class="nav__menu__link nav__link">Habilidades</a>
+            </li>
+            <li class="nav__menu__item">
+                <a href="#proyectos" class="nav__menu__link nav__link"
+                  >Proyectos</a>
+              </li>
+            <li class="nav__menu__item">
+              <a href="#contacto" class="nav__menu__link nav__link"
+                >Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    <section class="contenedor" id="about-me">
+        <div class="casilla__contenido">
+            <h2>Sobre mi</h2>
+        <p>Soy Sebastian </p>
+        <p>Desarrollador web junior, estudie en <a href="https://www.coderhouse.cl/">coderhouse</a> siempre he sido un apasionado de la informática desde muy joven,siempre manteniendo al día mis conocimientos con respecto a los cambios que se producen día a día.</p>
+        </div>
+    </section>
+    <main> <!-- INICIO MAIN -->
+        <div class="contenedor" id="servicios">
+            <div class="casilla__titulo">
+                <h2>Servicios</h2>
+            </div>
+            <div class="casilla">
+                <div class="casilla__contenido">
+                    <img src="./img/servicios/desarrollo-web.svg" alt="">
+                    <h2>
+                        diseño web
+                    </h2>
+                    <p>Diseño web rapido y con una buena experiencia para el usuario</p>
+                </div>
+            </div>
+            <div class="casilla">
+                <div class="casilla__contenido">
+                    <img src="./img/servicios/server.svg" alt="">
+                    <h2>
+                        Servidores Seguros
+                    </h2>
+                    <p>Con una buena compañia que respalda tus datos </p>
+                </div>
+            </div>
+            <div class="casilla">
+                <div class="casilla__contenido">
+                    <img src="./img/servicios/diseño.svg" alt="">
+                    <h2>
+                        Diseño Grafico
+                    </h2>
+                    <p>Diseño de tus logos y edicion en tus mejores fotos</p>
+                </div>
+            </div>
+        </div>
+    </main><!-- FIN MAIN -->    
+    <div class="contenedor" id="skills">
+       <div class="casilla__titulo">
+           <h2>Habilidades</h2>
+       </div>
+       <div class="casilla__titulo">
+           <h3>Mis habilidades creativas y experiencias</h3>
+       </div>
+        <div class="grid"> 
+                <div class="skills"> 
+                    <div class="skills__contenido">
+                        <img src="./img/skills/html.svg" alt="">
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills__contenido">
+                        <img src="./img/skills/css.svg" alt="">
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills__contenido">
+                        <img src="./img/skills/nodejs.svg" alt="">
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills__contenido">
+                        <img src="./img/skills/sass.svg" alt="">
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills__contenido">
+                        <img src="./img/skills/figma.svg" alt="">
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills__contenido">
+                        <img src="./img/skills/github.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="contenedor">
+        <div class="tarjeta">
+          <div class="tarjeta__contenido">
+              <img src="https://assets.startbootstrap.com/img/screenshots/themes/grayscale.medium.webp">
+          </div>
+            <p></p>
+        </div>
+        <div class="tarjeta"></div>
+        <div class="tarjeta"></div>
+    </div>
+    <div class="contenedor__contacto" id="contacto">
+        <div class="">
+            <h2>Contacto</h2>
+        </div>
+        <div class="contenedor__contacto__column">
+            <div class="contenedor__contacto__row"></div>
+            <div class="contenedor__contacto__row"></div>
+            <div class="contenedor__contacto__row"></div>
+            <div class="contenedor__contacto__row"></div>
+        </div>
+        <form action="POST" enctype="application/x-www-form-urlencoded">
+            <div class="contenedor__contacto__row">
+                <section class="contenedor__contacto__column">
+                    <label for="name">Nombre:</label>
+                    <input type="text" placeholder="Nombre">
+                    <label for="lastName">Apellido:</label>
+                    <input type="lastName" placeholder="Apellido">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" placeholder="email" required>      
+                </section>
+            </div>
+                <label for="comment">
+                    <textarea name="comment" id="" cols="30" placeholder="Mensaje"></textarea>
+                </label>    
+            </section>
+            <button>
+                <input type="submit" value="Enviar Mensaje">
+            </button>   
+            </form>
+    </div>
+    <footer>
+        <div class="footer__contenedor">
+            <div class="footer__contenedor__logo">
+                <h4>logo</h4>
+            </div>
+            <div class="footer__contenedor__terms">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, ut qui! Expedita, deleniti natus, tenetur nemo temporibus commodi quasi id corporis voluptate vero illo quis, ad animi provident blanditiis et!</p>
+            </div>
+            <div class="footer__caja">
+                <a href="#">servicios</a>
+                <a href="#">Contacto</a>
+                <a href="#">about me</a>
+                <a href="#">Proyectos</a>
+            </div>
+            <div class="footer__caja">
+                <a href=""><i class="fab fa-facebook-square"></i> Facebook</a> 
+                <a href=""><i class="fab fa-instagram-square"></i> Instagram</a>
+                <a href=""><i class="fab fa-twitter-square"></i> Twitter</a>
+                <a href=""><i class="fab fa-linkedin"></i> Linkedin</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/cf7713ae6e.js" crossorigin="anonymous"></script>
+</body>
+</html>
