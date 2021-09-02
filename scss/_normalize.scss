@@ -21,18 +21,21 @@ ul,ol{
     }
 }
 p{
-    color:$azul;
     font-size: 1.2em;
 }
 h1{
     text-align: center;
 }
-h2{
-    font-size: 2em;
+h2,h3{
+    margin-top:6%;
+    font-size: 1.8em;
+    color: $negro;
 }
+
 @media only screen and (max-width:768px){
-    h2{
+    h2,h3{
         font-size: 1.5em;
+        margin: 0;
     }
     p{
         font-size: 1em;

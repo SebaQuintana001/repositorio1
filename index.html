@@ -16,67 +16,73 @@
 <body>
     <header class="header">
         <nav class="nav">
-        <label class="logo nav__link">Portfolio.</label>
-          <button class="nav__toggle" aria-label="Abrir menú">
+            <label class="logo nav__link">Portfolio.</label>
+            <button class="nav__toggle" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
-          </button>
-          <ul class="nav__menu">
-            <li class="nav__menu__item">
+            </button>
+            <ul class="nav__menu">
+                <li class="nav__menu__item">
               <a href="#" class="nav__menu__link nav__link">Inicio</a>
-            </li>
-            <li class="nav__menu__item">
+                </li>
+                <li class="nav__menu__item">
               <a href="#about-me" class="nav__menu__link nav__link">Sobre mi</a>
-            </li>
-            <li class="nav__menu__item">
+                </li>
+                <li class="nav__menu__item">
               <a href="#skills" class="nav__menu__link nav__link">Habilidades</a>
-            </li>
-            <li class="nav__menu__item">
+                </li>
+                <li class="nav__menu__item">
                 <a href="#proyectos" class="nav__menu__link nav__link"
                   >Proyectos</a>
-              </li>
-            <li class="nav__menu__item">
+                </li>
+                <li class="nav__menu__item">
               <a href="#contacto" class="nav__menu__link nav__link"
                 >Contacto</a>
-            </li>
-          </ul>
+                </li>
+            </ul>
         </nav>
-      </header>
-    <section class="contenedor" id="about-me">
-        <div class="casilla__contenido">
-            <h2>Sobre mi</h2>
-        <p>Soy Sebastian </p>
-        <p>Desarrollador web junior, estudie en <a href="https://www.coderhouse.cl/">coderhouse</a> siempre he sido un apasionado de la informática desde muy joven,siempre manteniendo al día mis conocimientos con respecto a los cambios que se producen día a día.</p>
+    </header>
+    <section class="contenedor__aboutme" id="about-me">
+        <div class="contenedor__aboutme__contenido">
+            <div class="contenedor__aboutme__column">
+                <img src="./img/aboutme/Developer.svg" alt="">
+            </div>
+        </div>
+        <div class="contenedor__aboutme__column">
+            <div class="contenedor__aboutme__titulo">
+                <h2>Sobre mi</h2>
+            </div>
+            <h3>Soy Sebastian <span class="typed"></span></h3>
+            <div class="contenedor__aboutme__row">
+                <p>Desarrollador web junior, estudie en <a href="https://www.coderhouse.cl/">coderhouse</a> siempre he sido un apasionado de la informática desde muy joven,siempre manteniendo al día mis conocimientos con respecto a los cambios que se producen día a día.</p>
+            </div>
+            <div class="contenedor__aboutme__row">
+                <a class="btn-aboutme" href="">Descargar CV<a>
+            </div>
         </div>
     </section>
     <main> <!-- INICIO MAIN -->
-        <div class="contenedor" id="servicios">
-            <div class="casilla__titulo">
+        <div class="contenedor__servicios" id="servicios">
+            <div class="contenedor__servicios__titulo">
                 <h2>Servicios</h2>
             </div>
-            <div class="casilla">
-                <div class="casilla__contenido">
+            <div class="contenedor__servicios__casilla">
+                <div class="contenedor__servicios__casilla__contenido">
                     <img src="./img/servicios/desarrollo-web.svg" alt="">
-                    <h2>
-                        diseño web
-                    </h2>
+                    <h2>diseño web</h2>
                     <p>Diseño web rapido y con una buena experiencia para el usuario</p>
                 </div>
             </div>
-            <div class="casilla">
-                <div class="casilla__contenido">
+            <div class="contenedor__servicios__casilla">
+                <div class="contenedor__servicios__casilla__contenido">
                     <img src="./img/servicios/server.svg" alt="">
-                    <h2>
-                        Servidores Seguros
-                    </h2>
+                    <h2>Servidores Seguros</h2>
                     <p>Con una buena compañia que respalda tus datos </p>
                 </div>
             </div>
-            <div class="casilla">
-                <div class="casilla__contenido">
+            <div class="contenedor__servicios__casilla">
+                <div class="contenedor__servicios__casilla__contenido">
                     <img src="./img/servicios/diseño.svg" alt="">
-                    <h2>
-                        Diseño Grafico
-                    </h2>
+                    <h2>Diseño Grafico</h2>
                     <p>Diseño de tus logos y edicion en tus mejores fotos</p>
                 </div>
             </div>
@@ -87,38 +93,48 @@
            <h2>Habilidades</h2>
        </div>
         <div class="grid"> 
-                <div class="skills"> 
-                    <div class="skills__contenido">
-                        <img src="./img/skills/html.svg" alt="">
-                    </div>
+            <div class="skills"> 
+                <div class="skills__contenido">
+                    <img src="./img/skills/html.svg" alt="">
                 </div>
-                <div class="skills">
-                    <div class="skills__contenido">
-                        <img src="./img/skills/css.svg" alt="">
-                    </div>
+            </div>
+            <div class="skills">
+                <div class="skills__contenido">
+                    <img src="./img/skills/css.svg" alt="">
                 </div>
-                <div class="skills">
-                    <div class="skills__contenido">
-                        <img src="./img/skills/nodejs.svg" alt="">
-                    </div>
+            </div>
+            <div class="skills">
+                <div class="skills__contenido">
+                    <img src="./img/skills/nodejs.svg" alt="">
                 </div>
-                <div class="skills">
-                    <div class="skills__contenido">
-                        <img src="./img/skills/sass.svg" alt="">
-                    </div>
+            </div>
+            <div class="skills">
+                <div class="skills__contenido">
+                    <img src="./img/skills/sass.svg" alt="">
                 </div>
-                <div class="skills">
-                    <div class="skills__contenido">
-                        <img src="./img/skills/figma.svg" alt="">
-                    </div>
+            </div>
+            <div class="skills">
+                <div class="skills__contenido">
+                    <img src="./img/skills/figma.svg" alt="">
                 </div>
-                <div class="skills">
-                    <div class="skills__contenido">
-                        <img src="./img/skills/github.svg" alt="">
-                    </div>
+            </div>
+            <div class="skills">
+                <div class="skills__contenido">
+                    <img src="./img/skills/github.svg" alt="">
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skills__contenido">
+                    <img src="./img/skills/git.svg" alt="">
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skills__contenido">
+                    <img src="./img/skills/bootstrap.svg" alt="">
                 </div>
             </div>
         </div>
+    </div>
     <div class="contenedor" id="proyectos">
         <div class="tarjeta">
             <div class="tarjeta__contenido">
@@ -139,44 +155,53 @@
             <p>Modelo para una agencia</p>
         </div>
     </div>
-    <div class="contenedor__contacto" id="contacto">
-        <div class="">
+    <div class="contenedor__contacto" id="contacto"> <!-- INICIOCONTACTO -->
+        <div class="contenedor__contacto__titulo"> <!-- INICIO TITULO CONTACTO -->
             <h2>Contacto</h2>
-        </div>
-        <div class="contenedor__contacto__column">
-            <div class="contenedor__contacto__row">
-                <i></i>
+        </div> <!-- FIN TITULO CONTACTO -->
+        <div class="contenedor__contacto__column"> <!-- INICIO ICONOS CONTACTO -->
+            <div class="contenedor__contacto__column iconos">
+                    <div class="contenedor__contacto__row">
+                        <img src="./img/contac/name.svg" class="contactoimg">
+                        <p>Sebastian Quintana</p>
+                    </div>
+                <div class="contenedor__contacto__row">
+                    <img class="contactoimg" src="./img/contac/location.svg">
+                    <p>Chile,Concepcion</p>
+                </div>
+                <div class="contenedor__contacto__row">
+                    <img src="./img/contac/email.svg" class="contactoimg">
+                    <p>Sebaquintana001@gmail.com</p>               
+                </div>
+                <div class="contenedor__contacto__row">
+                    <img src="./img/contac/phone.svg" class="contactoimg">
+                    <p>+569 98322690</p>
+                </div>
             </div>
-            <div class="contenedor__contacto__row">
-                <i></i>
-            </div>
-            <div class="contenedor__contacto__row">
-                <i></i>
-            </div>
-            <div class="contenedor__contacto__row">
-                <i></i>
-            </div>
-        </div>
-        <form action="POST" enctype="application/x-www-form-urlencoded">
-            <div class="contenedor__contacto__row">
-                <section class="contenedor__contacto__column">
-                    <label for="name">Nombre:</label>
-                    <input type="text" placeholder="Nombre">
-                    <label for="lastName">Apellido:</label>
-                    <input type="lastName" placeholder="Apellido">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" placeholder="email" required>      
-                </section>
-            </div>
-                <label for="comment">
-                    <textarea name="comment" id="" cols="30" placeholder="Mensaje"></textarea>
-                </label>    
-            </section>
-            <button>
-                <input type="submit" value="Enviar Mensaje">
-            </button>   
-            </form>
-    </div>
+        </div> <!-- FIN ICONOS CONTACTO -->
+        <div class="contenedor__contacto__column"> <!-- INICIO FORM CONTACTO -->
+            <form action="POST" enctype="application/x-www-form-urlencoded">
+                <div class="contenedor__contacto__row">
+                    <section class="contenedor__contacto__column">
+                        <label for="name">Nombre:</label>
+                        <input type="text" class="textarea" placeholder="Nombre">
+                        <label for="lastName">Apellido:</label>
+                        <input type="lastName" class="textarea" placeholder="Apellido">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email"  class="textarea"placeholder="email" required>
+                        <label for="comment">
+                            <textarea name="comment" class="textarea__comment" placeholder="Mensaje"></textarea>
+                        </label>        
+                    </section>
+                </div>
+                <div class="contenedor__btn">
+                    <button class="contenedor__btn__contacto" type="submit" value="Enviar Mensaje">
+                        Enviar Mensaje
+                    </button>   
+                </div>
+                </form>
+        </div><!-- FIN FORM CONTACTO -->
+    </div> <!-- FIN CONTACTO -->
     <footer>
         <div class="footer__contenedor">
             <div class="footer__contenedor__logo">
@@ -199,6 +224,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/cf7713ae6e.js" crossorigin="anonymous"></script>
 </body>
