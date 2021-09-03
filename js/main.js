@@ -12,7 +12,7 @@ navToggle.addEventListener("click",()=> {
 })
 const typed = new Typed('.typed', {
 	strings: [
-		'<i class="animacion-typing">Desallorador Web</i>',
+		'<i class="animacion-typing">Desarrollador Web</i>',
 		'<i class="animacion-typing">Diseñador Web</i>',
 		'<i class="animacion-typing">Freelancer</i>',
 	],

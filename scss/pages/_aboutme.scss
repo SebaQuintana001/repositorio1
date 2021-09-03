@@ -1,3 +1,4 @@
+/*INICIO ABOUTME*/
 .animacion-typing{
     font-weight: bold;
     color: $azul;
@@ -17,7 +18,7 @@
     }
 }
 .contenedor__aboutme{
-    max-width: 95%;
+    max-width: 85%;
     display: flex;
     justify-content: center;
     box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
@@ -33,7 +34,6 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: center;
     width: 100%;
     }
     &__row{
@@ -41,16 +41,23 @@
         width: 100%;
         flex-direction: row;
         justify-content: center;
+        padding: 20px;
     }
     &__column{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    img{
-        max-width: 300px;
-        max-height: 300px;
-        margin-left: 40%;
-    }
+        display: flex;
+        flex-direction: column;
+        &__left{
+            width: 80%;
+            img{
+            max-width: 300px;
+            max-height: 300px;
+            }
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
     }
 }
 @media only screen and (max-width:768px) {
@@ -64,10 +71,16 @@
             flex-direction: column;
             width: 100%;
             align-items: center;
-            img{
-                max-height: 200px;
-                max-width: 200px;
-                margin:0;
+            
+            &__left{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                img{
+                    max-height: 200px;
+                    max-width: 200px;
+                    margin:0;
+                }
             }
         }
         &__titulo{
@@ -75,3 +88,50 @@
         }
     }
 }
+@media only screen and (max-width:600px){
+    .contenedor__aboutme{
+        &__row{
+          margin:30px 0;
+        }
+    }
+}
+@media only screen and (min-width:769px) and (max-width:992px){
+    .contenedor__aboutme{
+        &__row{
+            padding: 20px 20px;
+          p{
+              font-size: 18px;
+          }
+        }
+    }
+}
+@media only screen and (min-width:1400px) {
+    .contenedor__aboutme{
+        &__column{
+            &__left{
+            img{
+                margin-left: 45%;
+            }
+            } 
+
+        }
+    } 
+}
+@media only screen and (max-width:1090px){
+    .contenedor__aboutme{
+        &__column{
+            &__right{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                img{
+                    max-height: 200px;
+                    max-width: 200px;
+                    margin:0;
+                }
+            }
+        }
+    }    
+}
+
+/*FIN ABOUTME*/

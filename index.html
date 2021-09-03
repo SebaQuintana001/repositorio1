@@ -10,17 +10,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,700&display=swap');
     </style>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Freelance</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
+    <header class="header"> <!-- INICIO HEADER --> 
+        <nav class="nav">   <!-- INICIO NAV --> 
             <label class="logo nav__link">Portfolio.</label>
             <button class="nav__toggle" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
             </button>
-            <ul class="nav__menu">
+            <ul class="nav__menu"> <!-- INICIO LISTA --> 
                 <li class="nav__menu__item">
               <a href="#" class="nav__menu__link nav__link">Inicio</a>
                 </li>
@@ -38,25 +38,27 @@
               <a href="#contacto" class="nav__menu__link nav__link"
                 >Contacto</a>
                 </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="contenedor__aboutme" id="about-me">
+            </ul>   <!-- FIN LISTA --> 
+        </nav> <!-- FIN NAV --> 
+    </header> <!-- FIN HEADER --> 
+    <section class="contenedor__aboutme" id="about-me"> <!-- INICIO ABOUTME --> 
         <div class="contenedor__aboutme__contenido">
-            <div class="contenedor__aboutme__column">
+            <div class="contenedor__aboutme__column__left">
                 <img src="./img/aboutme/Developer.svg" alt="">
             </div>
         </div>
         <div class="contenedor__aboutme__column">
-            <div class="contenedor__aboutme__titulo">
+            <div class="contenedor__aboutme__titulo margin__left">
                 <h2>Sobre mi</h2>
             </div>
-            <h3>Soy Sebastian <span class="typed"></span></h3>
+            <div class="margin__left">
+                <h3>Soy Sebastian <span class="typed"></span></h3>
+            </div>
             <div class="contenedor__aboutme__row">
                 <p>Desarrollador web junior, estudie en <a href="https://www.coderhouse.cl/">coderhouse</a> siempre he sido un apasionado de la informática desde muy joven,siempre manteniendo al día mis conocimientos con respecto a los cambios que se producen día a día.</p>
             </div>
         </div>
-    </section>
+    </section> <!-- FIN ABOUTME --> 
     <main> <!-- INICIO MAIN -->
         <div class="contenedor__servicios" id="servicios">
             <div class="contenedor__servicios__titulo">
@@ -85,9 +87,12 @@
             </div>
         </div>
     </main><!-- FIN MAIN -->    
-    <div class="contenedor" id="skills">
+    <div class="contenedor" id="skills"> <!-- INICIO SKILLS--> 
        <div class="casilla__titulo">
            <h2>Habilidades</h2>
+       </div>
+       <div class="casilla__p">
+           <p>Mis habilidades creativas y de desarrollo</p>
        </div>
         <div class="grid"> 
             <div class="skills"> 
@@ -131,8 +136,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="contenedor" id="proyectos">
+    </div>  <!-- FIN SKILLS--> 
+    <div class="contenedor" id="proyectos"><!-- INICIO PROYECTOS--> 
         <div class="tarjeta">
             <div class="tarjeta__contenido">
               <img src="https://assets.startbootstrap.com/img/screenshots/themes/clean-blog.medium.webp">
@@ -151,7 +156,7 @@
             </div>
             <p>Modelo para una agencia</p>
         </div>
-    </div>
+    </div>  <!-- FIN PROYECTOS-->
     <div class="contenedor__contacto" id="contacto"> <!-- INICIOCONTACTO -->
         <div class="contenedor__contacto__titulo"> <!-- INICIO TITULO CONTACTO -->
             <h2>Contacto</h2>
@@ -172,7 +177,7 @@
                 </div>
                 <div class="contenedor__contacto__row">
                     <img src="./img/contac/phone.svg" class="contactoimg">
-                    <p>+569 98322690</p>
+                    <p>+569 33637862</p>
                 </div>
             </div>
         </div> <!-- FIN ICONOS CONTACTO -->
@@ -199,7 +204,7 @@
                 </form>
         </div><!-- FIN FORM CONTACTO -->
     </div> <!-- FIN CONTACTO -->
-    <footer>
+    <footer> <!-- INICIO FOOTER--> 
         <div class="footer__contenedor">
             <div class="footer__contenedor__logo">
                 <h4>logo</h4>
@@ -220,7 +225,7 @@
                 <a href=""><i class="fab fa-linkedin"></i> Linkedin</a>
             </div>
         </div>
-    </footer>
+    </footer><!-- FIN FOOTER--> 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/cf7713ae6e.js" crossorigin="anonymous"></script>

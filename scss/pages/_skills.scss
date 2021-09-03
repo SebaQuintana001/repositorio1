@@ -1,11 +1,12 @@
+/*INICIO SKILLS*/
 .skills{
     margin-top: 100px;
     min-height: 220px;
-    cursor: pointer;
     transition: all 0.4s ease;
     border-radius: 15px;
     margin: -40px 10px;
     display: flex;
+    padding-top:10px;
     &__contenido{
         display: flex;
         justify-content: center;
@@ -17,3 +18,4 @@
         }
     }
 }
+/*FIN SKILLS*/

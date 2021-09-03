@@ -1,3 +1,4 @@
+/*INICIO VARIABLES*/
 /*paleta de colores*/
 $azul:#B2ABF2;
 $verde:#A7CAB1;
@@ -10,7 +11,7 @@ $width-porcent:100%;
 /*Magenes*/
 .margin{
     &__left{
-        margin-left: 2em;
+        margin-left: 20px;
     }
 }
 
@@ -31,3 +32,4 @@ $width-porcent:100%;
         grid-template-columns: auto auto;
     }
 }
+/*FIN VARIABLES*/
