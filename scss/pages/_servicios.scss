@@ -6,7 +6,8 @@
     box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
     margin: 100px auto;
     border-radius: 15px;
-    flex-flow: row;
+    flex-flow: row wrap;
+    padding: 50px 0;
     &__titulo{
         display: flex;
         flex-direction: row;
@@ -19,7 +20,7 @@
     transition: all 0.4s ease;
     border-radius: 15px;
     margin: 30px 10px;
-    padding: 0 10px;
+    padding: 10px 10px;
     display: flex;
     flex-direction: row;
     margin-top: 80px;
@@ -41,24 +42,32 @@
     }
     }
 }
+.contenedor__servicios__casilla:hover {
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.5);
+}
 @media only screen and (max-width:768px){
     .contenedor__servicios{
     max-width: 80%;
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     &__titulo{
     position: relative;
     }
     &__casilla{
         margin:0;
     }
+    img{
+    width:$width-img/1.5;
+    height:$height-img/1.5;    
+    }
     }
 }
 @media only screen and (max-width:420px){
     .contenedor__servicios{
         &__casilla{
-            margin: -30px 0;
+            margin: 20px 0;
         }
     }
 }

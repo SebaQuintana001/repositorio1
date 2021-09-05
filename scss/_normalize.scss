@@ -1,4 +1,7 @@
 /*INICIO NORMALIZACION*/
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin:0;
@@ -27,8 +30,7 @@ p{
 h1{
     text-align: center;
 }
-h2,h3{
-    margin-top:6%;
+h2,h3{ 
     font-size: 1.8em;
     color: $negro;
 }
@@ -50,20 +52,27 @@ h2,h3{
 
 }
 @media only screen and (max-width:600px){
-    h3{
-        font-size: 22px;
+    h2,h3{
+        font-size: 120%;
     }
     p{
-        font-size: 17px;
+        font-size: 90%;
     }
 }
-@media only screen and (max-width:420px){
-    h3{
-        font-size: 15px;
+@media only screen and (max-width:320px){
+    h2,h3{
+        font-size: 80%;
     }
     p{
-        font-size: 13px;
+        font-size: 75%;
     }
 }
-
+@media only screen and (min-width:320px) and (max-width:420px){
+    h2,h3{
+        font-size: 100%;
+    }
+    p{
+        font-size: 84%;
+    }
+}
 /*FIN NORMALIZACION*/

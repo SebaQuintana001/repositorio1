@@ -23,6 +23,9 @@
 
 /*FIN VARIABLES*/
 /*INICIO NORMALIZACION*/
+html {
+  scroll-behavior: smooth; }
+
 * {
   padding: 0;
   margin: 0;
@@ -51,7 +54,6 @@ h1 {
   text-align: center; }
 
 h2, h3 {
-  margin-top: 6%;
   font-size: 1.8em;
   color: #37393A; }
 
@@ -69,16 +71,22 @@ h2, h3 {
     margin: 10px 0; } }
 
 @media only screen and (max-width: 600px) {
-  h3 {
-    font-size: 22px; }
+  h2, h3 {
+    font-size: 120%; }
   p {
-    font-size: 17px; } }
+    font-size: 90%; } }
 
-@media only screen and (max-width: 420px) {
-  h3 {
-    font-size: 15px; }
+@media only screen and (max-width: 320px) {
+  h2, h3 {
+    font-size: 80%; }
   p {
-    font-size: 13px; } }
+    font-size: 75%; } }
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  h2, h3 {
+    font-size: 100%; }
+  p {
+    font-size: 84%; } }
 
 /*FIN NORMALIZACION*/
 /*PARTIALS*/
@@ -89,7 +97,8 @@ h2, h3 {
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 100px auto;
   border-radius: 15px;
-  flex-flow: row; }
+  flex-flow: row wrap;
+  padding: 50px 0; }
 
 .casilla:hover {
   box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.39); }
@@ -279,7 +288,8 @@ footer {
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 100px auto;
   border-radius: 15px;
-  flex-flow: row; }
+  flex-flow: row wrap;
+  padding: 50px 0; }
   .contenedor__servicios__titulo {
     display: flex;
     flex-direction: row;
@@ -291,7 +301,7 @@ footer {
     transition: all 0.4s ease;
     border-radius: 15px;
     margin: 30px 10px;
-    padding: 0 10px;
+    padding: 10px 10px;
     display: flex;
     flex-direction: row;
     margin-top: 80px; }
@@ -309,20 +319,27 @@ footer {
         text-align: center;
         color: #B2ABF2; }
 
+.contenedor__servicios__casilla:hover {
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.5); }
+
 @media only screen and (max-width: 768px) {
   .contenedor__servicios {
     max-width: 80%;
     flex-flow: wrap column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 20px; }
     .contenedor__servicios__titulo {
       position: relative; }
     .contenedor__servicios__casilla {
-      margin: 0; } }
+      margin: 0; }
+    .contenedor__servicios img {
+      width: 53.33333px;
+      height: 53.33333px; } }
 
 @media only screen and (max-width: 420px) {
   .contenedor__servicios__casilla {
-    margin: -30px 0; } }
+    margin: 20px 0; } }
 
 /*FIN SERVICIOS*/
 /*INICIO ABOUTME*/
@@ -349,7 +366,8 @@ footer {
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 100px auto;
   border-radius: 15px;
-  flex-flow: row; }
+  flex-flow: row;
+  padding: 50px 0; }
   .contenedor__aboutme__titulo {
     display: flex;
     flex-direction: row;
@@ -402,7 +420,10 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .contenedor__aboutme__row {
-    margin: 30px 0; } }
+    margin: 15px 0;
+    padding: 0; }
+  .margin__left {
+    margin: 0; } }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .contenedor__aboutme__row {
@@ -433,7 +454,7 @@ footer {
   border-radius: 15px;
   margin: -40px 10px;
   display: flex;
-  padding-top: 10px; }
+  padding: 50px 0px; }
   .skills__contenido {
     display: flex;
     justify-content: center;
@@ -452,7 +473,8 @@ footer {
   justify-content: center;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 100px auto;
-  border-radius: 15px; }
+  border-radius: 15px;
+  padding: 50px 0px; }
   .contenedor__contacto__titulo {
     display: flex;
     flex-direction: row;
@@ -525,7 +547,7 @@ footer {
     font-size: 15px;
     outline: none; }
     .textarea__comment {
-      width: 200px;
+      width: 60%;
       height: 100px;
       resize: none; }
   .contactoimg {
@@ -551,13 +573,21 @@ footer {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    margin: 10px -10px; }
+    margin: 10px -10px;
+    padding: 10px; }
   .contenedor__contacto p {
     font-size: 0.8em; } }
 
 /*FIN CONTACT*/
 /*INICIO PROYECTOS*/
+.contenedor__titulo {
+  display: flex;
+  flex-direction: row;
+  position: absolute; }
+
 .tarjeta {
+  padding: 40px 0px;
+  margin: 20px;
   height: 320px; }
   .tarjeta p {
     text-align: center; }
@@ -569,5 +599,9 @@ footer {
       width: 225px;
       height: 150px;
       border-radius: 50%; }
+
+@media only screen and (max-width: 768px) {
+  .contenedor__titulo {
+    position: relative; } }
 
 /*FIN PROYECTOS*/

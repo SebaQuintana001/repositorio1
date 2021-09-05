@@ -5,7 +5,9 @@
     box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
     margin: 100px auto;
     border-radius: 15px;
-    flex-flow: row;
+    flex-flow: row wrap;
+    padding: 50px 0;
+
 }
 .casilla:hover{
     box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.39);
